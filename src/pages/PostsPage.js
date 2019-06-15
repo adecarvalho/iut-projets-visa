@@ -71,13 +71,11 @@ const PostsPage = props => {
       </div>
 
       <div className="row">
-        <div className="">
-          <PostsList
-            user={context.user}
-            posts={context.posts}
-            deletePostHandler={deletePostHandler}
-          />
-        </div>
+        <PostsList
+          user={context.user}
+          posts={context.posts}
+          deletePostHandler={deletePostHandler}
+        />
       </div>
     </div>
   )

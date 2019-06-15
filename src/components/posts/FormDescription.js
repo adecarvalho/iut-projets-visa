@@ -23,7 +23,7 @@ const FormDescription = props => {
 
     //descriptions
     if (descriptions.trim() === "") {
-      setErrors("Veuillez saisir uns description!")
+      setErrors("Veuillez saisir une description!")
       setDescriptions("")
       return false
     }
@@ -87,7 +87,7 @@ const FormDescription = props => {
                     setLastName(e.target.value)
                   }}
                 />
-                <label htmlFor="Last_name">Prénom</label>
+                <label htmlFor="last_name">Prénom</label>
               </div>
             </div>
 

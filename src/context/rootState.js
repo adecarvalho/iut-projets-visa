@@ -41,24 +41,29 @@ const RootState = props => {
 
   //
   useEffect(() => {
+    console.log("use effect")
     const saveUser = JSON.parse(localStorage.getItem("user"))
     if (saveUser) {
-      return userDispatch({
+      userDispatch({
         type: LOG_IN,
         payload: saveUser
       })
     }
-  }, [])
-
-  //
-  useEffect(() => {
+    //
+    fetchNotifications()
+    //
     fetchSujets()
   }, [])
 
   //
-  useEffect(() => {
-    fetchNotifications()
-  }, [])
+  // useEffect(() => {
+  //   fetchSujets()
+  // }, [])
+
+  // //
+  // useEffect(() => {
+  //   fetchNotifications()
+  // }, [])
 
   //
   const setVisa = visa => {

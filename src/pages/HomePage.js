@@ -1,17 +1,9 @@
 import React from "react"
-//import React, { useContext, useEffect } from "react"
+
 import ConnexionInfo from "../components/ConnexionInfo"
 import NotificationInfo from "../notifications/NotificationInfo"
 
-//import RootContext from "../context/root-context"
-
 const HomePage = props => {
-  //const context = useContext(RootContext)
-
-  /*  useEffect(() => {
-    //context.fetchSujets()
-  }, []) */
-
   return (
     <div className="fluid">
       <div className="row">

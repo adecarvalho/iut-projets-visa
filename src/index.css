@@ -42,10 +42,6 @@ body {
   margin: 0 20px 0 20px;
 }
 
-.brand-logo {
-  margin-left: 20px;
-}
-
 .container-btn-notification {
   display: flex;
   align-items: flex-start;
